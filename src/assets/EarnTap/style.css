@@ -1,0 +1,28 @@
+/* style.css */
+.levelTap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #32363C; 
+  border-radius: 24px;
+  padding: 8px 16px;
+  width: fit-content;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.level,
+.price,
+.spend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.level {
+  border-right: 1px solid #4d4d4d;
+  padding-right: 16px;
+}

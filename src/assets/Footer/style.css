@@ -1,0 +1,27 @@
+.wrapFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    gap: 2px;
+    border-radius: 8px;
+    width: 70px;
+}
+
+.wrapFooter:active {
+    background-color: #21242980;
+    color: white;
+}
+
+.wrapFooter p {
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.wrapFooter img {
+    height: 20px;
+    width: 24px;
+}

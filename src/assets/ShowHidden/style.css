@@ -1,0 +1,66 @@
+.card {
+  background-color: #32363C;
+  border-radius: 12px;
+  color: white;
+  font-family: sans-serif;
+  width: 319px;
+  height: 127.56px;
+}
+
+.card-top {
+  padding: 13px 0 0 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 30px;
+}
+
+.card-info {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+
+.card-profit {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card-bottom {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #444;
+  padding: 13px 0 13px 13px;
+}
+
+.coin-icon img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.card-level {
+  padding-right: 20px;
+}
+
+.card-balance {
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 1px solid #444;
+  display: flex;
+  align-items: center;
+}

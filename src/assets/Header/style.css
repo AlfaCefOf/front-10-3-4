@@ -1,0 +1,35 @@
+
+.headerLinefr{
+    width: 100%;
+    margin-left: 10px;
+}
+.headerLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 50px;
+    background-color: #32363C;
+    border-radius: 10px;
+}
+
+.headerLine p:nth-child(1) {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 11px;
+    color: #F79841;
+}
+
+.upGrage {
+    display: flex;
+    align-items: center;
+}
+
+.upGrage p {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
