@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./assets/Header";
 import coin from "./assets/img/coin.png";
@@ -19,9 +19,20 @@ import icon3 from "./assets/img/iconShow3.png";
 import EarnTap from "./assets/EarnTap";
 
 function App() {
-  const [son, setSon] = useState(507981);
+  const [count, setCount] = useState(0);
   const [show, setShow] = useState(false);
   const [showLevels, setShowLevels] = useState(false);
+
+  useEffect(() => {
+    const counted = Number(localStorage.getItem("count"));
+    counted ? setCount(counted) : setCount(0);
+  }, []);
+
+  const Cliker = () => {
+    const newCount = count + 1;
+    setCount(newCount);
+    localStorage.setItem("count", newCount);
+  };
 
   return (
     <>
@@ -57,7 +68,6 @@ function App() {
                 src={hideLogo}
                 alt=""
               />
-
               <div className="levelLine">
                 <EarnTap level="1" bonus="2" buy="1000" />
                 <EarnTap level="2" bonus="3" buy="2500" />
@@ -66,16 +76,17 @@ function App() {
             </div>
           )}
         </div>
+
         <div className="score">
           <img src={coinBig} alt="" />
-          <h1>{son.toLocaleString("en-US")}</h1>
+          <h1>{count}</h1>
         </div>
 
         {!show && (
           <>
             <div className="clickBox">
               <img
-                onClick={() => setSon(son + 1)}
+                onClick={Cliker}
                 src={hamster}
                 alt="Hamster"
               />
@@ -99,7 +110,6 @@ function App() {
               src={hideLogo}
               alt=""
             />
-
             <ShowHidden
               iconShw={icon1}
               nameShw="Тоp 10 cmc pairs"
